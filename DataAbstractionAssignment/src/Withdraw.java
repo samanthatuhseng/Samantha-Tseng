@@ -12,6 +12,6 @@ public class Withdraw {
     }
 
     public String toString(){
-        return "Amount Withdrawed: "+amount+" Date: "+date+" Account:"+account;
+        return "Amount Withdrawed: "+amount+" Date: "+date+" Account: "+account;
     }
 }
