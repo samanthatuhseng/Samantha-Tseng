@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TextField fx:id="getName" layoutX="26.0" layoutY="36.0" prefHeight="25.0" prefWidth="149.0" promptText="Name" />
+      <TextField fx:id="getGender" layoutX="26.0" layoutY="77.0" prefHeight="25.0" prefWidth="149.0" promptText="Gender" />
+      <TextField fx:id="getAge" layoutX="26.0" layoutY="120.0" prefHeight="25.0" prefWidth="149.0" promptText="Age" />
+      <ListView fx:id="friendslist" layoutX="200.0" layoutY="29.0" onMouseClicked="#showFriend" prefHeight="371.0" prefWidth="200.0" />
+      <Label layoutX="410.0" layoutY="31.0" prefHeight="25.0" prefWidth="38.0" text="Name:" />
+      <Label layoutX="410.0" layoutY="76.0" prefHeight="25.0" prefWidth="51.0" text="Gender:" />
+      <Label layoutX="410.0" layoutY="119.0" prefHeight="25.0" prefWidth="38.0" text="Age:" />
+      <Label fx:id="showName" layoutX="461.0" layoutY="31.0" prefHeight="25.0" prefWidth="117.0" />
+      <Label fx:id="showGender" layoutX="461.0" layoutY="76.0" prefHeight="25.0" prefWidth="117.0" />
+      <Label fx:id="showAge" layoutX="461.0" layoutY="119.0" prefHeight="25.0" prefWidth="117.0" />
+      <Button layoutX="57.0" layoutY="160.0" mnemonicParsing="false" onAction="#createFriend" text="Create Friend" />
+      <Button layoutX="455.0" layoutY="159.0" mnemonicParsing="false" onAction="#deleteFriend" text="Remove Friend" />
+      <Label layoutX="265.0" layoutY="4.0" prefHeight="27.0" prefWidth="79.0" text="FRIENDS" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="437.0" layoutY="6.0" prefHeight="25.0" prefWidth="139.0" text="Friend Information">
+         <font>
+            <Font name="Yu Gothic Regular" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
