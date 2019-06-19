@@ -31,5 +31,9 @@
             <Font name="Yu Gothic Regular" size="15.0" />
          </font>
       </Label>
+      <Button layoutX="520.0" layoutY="200.0" mnemonicParsing="false" onAction="#loadFriend" text="Load" />
+      <Button layoutX="435.0" layoutY="200.0" mnemonicParsing="false" onAction="#saveFriend" text="Save" />
+      <Button layoutX="447.0" layoutY="241.0" mnemonicParsing="false" onAction="#loadMale" text="Load Male Friends" />
+      <Button layoutX="447.0" layoutY="280.0" mnemonicParsing="false" onAction="#loadFemale" text="Load Female Friends" />
    </children>
 </AnchorPane>
