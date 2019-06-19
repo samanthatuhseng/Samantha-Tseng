@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="getDate" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <DatePicker fx:id="date" layoutX="392.0" layoutY="175.0" />
+      <Pane layoutX="427.0" layoutY="213.0" prefHeight="57.0" prefWidth="103.0">
+         <children>
+            <TextField fx:id="getHour" layoutY="23.0" prefHeight="25.0" prefWidth="44.0" />
+            <TextField fx:id="getMin" layoutX="65.0" layoutY="23.0" prefHeight="25.0" prefWidth="44.0" />
+            <Label layoutX="40.0" layoutY="1.0" text="Time">
+               <font>
+                  <Font name="Georgia" size="12.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Button layoutX="389.0" layoutY="319.0" mnemonicParsing="false" onAction="#cancel" prefHeight="37.0" prefWidth="83.0" text="Cancel">
+         <font>
+            <Font name="Franklin Gothic Medium" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="490.0" layoutY="319.0" mnemonicParsing="false" onAction="#schedule" prefHeight="37.0" prefWidth="83.0" text="Schedule">
+         <font>
+            <Font name="Franklin Gothic Medium" size="15.0" />
+         </font>
+      </Button>
+      <ListView fx:id="appointmentList" layoutX="13.0" layoutY="41.0" onMouseClicked="#showPatient" prefHeight="343.0" prefWidth="182.0" />
+      <Label layoutX="36.0" layoutY="14.0" prefHeight="22.0" prefWidth="137.0" text="APPOINTMENTS" textAlignment="CENTER">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="18.0" />
+         </font>
+      </Label>
+      <Pane layoutX="370.0" layoutY="79.0" prefHeight="57.0" prefWidth="217.0">
+         <children>
+            <Label layoutX="74.0" layoutY="7.0" text="Patient Name">
+               <font>
+                  <Font name="Georgia" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="getPatientName" layoutX="36.0" layoutY="24.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="200.0" layoutY="41.0" prefHeight="343.0" prefWidth="182.0">
+         <children>
+            <Label layoutX="23.0" layoutY="53.0" text="Date:">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="121.0" text="Time:">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="195.0" prefHeight="16.0" prefWidth="59.0" text="Patient:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="showPatient" layoutX="75.0" layoutY="193.0" prefHeight="25.0" prefWidth="83.0">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="showTime" layoutX="64.0" layoutY="118.0" prefHeight="25.0" prefWidth="103.0">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="showDate" layoutX="65.0" layoutY="50.0" prefHeight="25.0" prefWidth="103.0">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="449.0" layoutY="147.0" text="Select Date">
+         <font>
+            <Font name="Georgia" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
